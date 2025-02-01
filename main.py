@@ -40,7 +40,7 @@ api_key = os.getenv("GROQ_API_KEY")
 def understand_reviews(file_path: str):
     # Initialize components
     # Initialize the language model
-    # llm = LLM(model="gpt-4", api_key=openai_api_key)
+    # llm = LLM(model="gpt-4o", api_key=openai_api_key)
     # llm = ChatGroq(model_name="llama-3.3-70b-specdec", api_key=api_key)
     llm = LLM(
         api_key=api_key,
@@ -95,7 +95,7 @@ def understand_reviews(file_path: str):
 # Function to generate markdown reports from review data
 def generate_markdowns(reviews_with_sentiment, sentiment_distribution, rating_distribution):
     # Initialize the language model
-    # llm = LLM(model="gpt-4")
+    # llm = LLM(model="gpt-4o")
     llm = LLM(
         api_key=api_key,
         # model="groq/llama-3.3-70b-specdec",
